@@ -1,5 +1,6 @@
 # Ex. No: 15E - Build and Evaluate an Expression Tree
 
+
 ## AIM:
 To write a Python program to build and evaluate the given Expression tree.
 
@@ -22,12 +23,21 @@ To write a Python program to build and evaluate the given Expression tree.
 ## PROGRAM:
 
 ```
-WRITE YOUR CODE
+from binarytree import heap,build,Node
+def heaptree(L):
+  x=L
+  t=build(x)
+  for i in t.values:
+    print(i,"-->",end='')
+  print("\nHeight : ",t.height)
+  print("Is max heap? : ",t.is_max_heap)
+  print("Is complete tree? : ",t.is_complete)
+
 ```
 
 ## OUTPUT:
-```
-```
+![image](https://github.com/user-attachments/assets/7b47d030-1224-4604-b300-a9ce26c9e934)
+
 
 ## RESULT:
-
+Thus, Python program to build and evaluate the given Expression tree was successfully implemented and verified.
